@@ -1,0 +1,5 @@
+Diseña una página web sencilla utilizando HTML y CSS (sin frameworks) similar a esta pero sin ser una copia exacta de la imagen 
+y utilizando otra temática. El resultado debe ser un diseño original, inspirado en la referencia pero suficientemente diferente 
+en composición y detalles. El código debe ser limpio y fácil de modificar.
+
+Dame los archivos HTML y CSS por separado para que sea más sencillo modificarlo.

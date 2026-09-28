@@ -1,0 +1,246 @@
+:root {
+    --bg-color: #FAF7F2;
+    --primary-dark: #233327;
+    --primary-accent: #3D5A45;
+    --accent-orange: #E08243;
+    --card-bg: #FFFFFF;
+    --text-main: #2C3530;
+    --text-muted: #5A655E;
+    --border-color: #E6E1D6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--primary-dark);
+    color: #FFFFFF;
+    padding: 1.25rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #D4DDD6;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #FFFFFF;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--primary-dark);
+    color: #FFFFFF;
+    padding: 5rem 0 7rem 0;
+    overflow: hidden;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(224, 130, 67, 0.15);
+    color: #F3A875;
+    padding: 0.4rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    color: #FFFFFF;
+}
+
+.hero-content p {
+    color: #C5D0C7;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 520px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent-orange);
+    color: #FFFFFF;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+    background-color: #CC7339;
+    transform: translateY(-1px);
+}
+
+.hero-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee-svg {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+}
+
+/* Cards Section */
+.cards-section {
+    padding: 6rem 0;
+}
+
+.cards-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+    color: var(--text-main);
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Footer / Visítanos Section */
+.site-footer {
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--border-color);
+    padding: 5rem 0;
+}
+
+.site-footer h2 {
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+    font-weight: 600;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.footer-col p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin: 0 auto 2rem auto;
+    }
+
+    .cards-grid, .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}

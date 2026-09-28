@@ -1,113 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brújula Norte — Viajes con otra perspectiva</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Lumina - Tueste Artesanal y Especialidad</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="site-header">
-    <a class="brand" href="#inicio">
-      <span class="brand-mark" aria-hidden="true">✦</span>
-      <span>Brújula Norte</span>
-    </a>
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">☕</span> Café Lumina
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#origen">Nuestra Cosecha</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-    <nav class="main-nav" aria-label="Navegación principal">
-      <a href="#inicio">Inicio</a>
-      <a href="#experiencias">Experiencias</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-copy">
-        <p class="eyebrow">Viajes · Naturaleza · Cultura</p>
-        <h1>El mundo empieza<br>cuando cambias<br>de dirección</h1>
-        <p class="hero-text">
-          Diseñamos escapadas diferentes para descubrir lugares,
-          sabores y paisajes que se quedan contigo mucho después de volver.
-        </p>
-        <a class="button" href="#experiencias">Explorar experiencias</a>
-      </div>
-
-      <div class="hero-art" aria-hidden="true">
-        <div class="moon"></div>
-        <div class="star star-one">✦</div>
-        <div class="star star-two">✦</div>
-        <div class="mountain mountain-back"></div>
-        <div class="mountain mountain-front"></div>
-        <div class="lake"></div>
-      </div>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">Cafetería de Especialidad & Tostaduría</span>
+                <h1>El arte de extraer la esencia en cada taza</h1>
+                <p>Granos de origen único seleccionados cuidadosamente de fincas de altura, tostados artesanalmente en el corazón de la ciudad para despertar tus sentidos.</p>
+                <a href="#origen" class="btn-primary">Descubre nuestros orígenes</a>
+            </div>
+            <div class="hero-illustration">
+                <!-- Ilustración vectorial inspirada en la referencia original -->
+                <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="coffee-svg">
+                    <!-- Montañas de fondo -->
+                    <path d="M50 320L180 160L320 320H50Z" fill="#3D5A45"/>
+                    <path d="M200 320L340 120L480 320H200Z" fill="#2C4434"/>
+                    <!-- Sol / Grano de café estilizado -->
+                    <circle cx="390" cy="110" r="35" fill="#E08243"/>
+                    <!-- Taza de café abstracta -->
+                    <path d="M120 240H280V300C280 333.137 253.137 360 220 360H180C146.863 360 120 333.137 120 300V240Z" fill="#F4EFE6"/>
+                    <path d="M280 260H310C326.569 260 340 273.431 340 290C340 306.569 326.569 320 310 320H280" stroke="#F4EFE6" stroke-width="12" stroke-linecap="round"/>
+                    <!-- Vapor -->
+                    <path d="M170 200C170 180 190 170 190 150C190 130 170 120 170 100" stroke="#F4EFE6" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+                    <path d="M230 205C230 185 250 175 250 155C250 135 230 125 230 105" stroke="#F4EFE6" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+                </svg>
+            </div>
+        </div>
     </section>
 
-    <section class="experiences" id="experiencias">
-      <div class="section-heading">
-        <p class="eyebrow">Nuestra selección</p>
-        <h2>Qué puedes descubrir</h2>
-      </div>
-
-      <div class="cards">
-        <article class="card card-one">
-          <div class="icon">⌁</div>
-          <h3>Rutas salvajes</h3>
-          <p>
-            Senderos, bosques y paisajes abiertos para desconectar
-            del ruido y volver a respirar con calma.
-          </p>
-        </article>
-
-        <article class="card card-two">
-          <div class="icon">◇</div>
-          <h3>Ciudades con historia</h3>
-          <p>
-            Barrios, arquitectura, gastronomía y rincones locales
-            para conocer cada destino desde dentro.
-          </p>
-        </article>
-
-        <article class="card card-three">
-          <div class="icon">☼</div>
-          <h3>Escapadas lentas</h3>
-          <p>
-            Viajes sin prisas, alojamientos especiales y experiencias
-            pensadas para disfrutar del camino.
-          </p>
-        </article>
-      </div>
+    <!-- Cards Section -->
+    <section id="origen" class="cards-section">
+        <div class="container">
+            <h2>Qué nos define</h2>
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <article class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Origen Sostenible</h3>
+                    <p>Trabajamos directamente con pequeños productores locales bajo estrictos estándares de comercio justo y agricultura regenerativa.</p>
+                </article>
+                <!-- Card 2 -->
+                <article class="card">
+                    <div class="card-icon">🔥</div>
+                    <h3>Tueste Artesanal</h3>
+                    <p>Curamos cada perfil de tueste en pequeños lotes para realzar las notas frutales, florales y dulces únicas de cada varietal.</p>
+                </article>
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="card-icon">☕</div>
+                    <h3>Métodos de Extracción</h3>
+                    <p>Desde espresso de precisión hasta filtrados V60 y Chemex preparados por baristas apasionados por la perfección.</p>
+                </article>
+            </div>
+        </div>
     </section>
 
-    <section class="visit" id="contacto">
-      <div class="section-heading">
-        <p class="eyebrow">¿Hablamos?</p>
-        <h2>Encuéntranos</h2>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-item">
-          <h3>Estudio</h3>
-          <p>Calle del Norte, 18<br>28045, Madrid</p>
+    <!-- Footer / Visítanos Section -->
+    <footer id="contacto" class="site-footer">
+        <div class="container">
+            <h2>Visítanos</h2>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Dirección</h4>
+                    <p>Calle del Aroma, 24<br>28012, Madrid</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Horario de apertura</h4>
+                    <p>Lunes a domingo<br>8:00 – 19:30</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>hola@cafelumina.es<br>+34 911 223 344</p>
+                </div>
+            </div>
         </div>
-
-        <div class="contact-item">
-          <h3>Horario</h3>
-          <p>Lunes a viernes<br>9:00 — 18:00</p>
-        </div>
-
-        <div class="contact-item">
-          <h3>Contacto</h3>
-          <p>hola@brujulanorte.es<br>91 345 67 89</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2026 Brújula Norte</p>
-    <p>Viajar también es una forma de mirar.</p>
-  </footer>
+    </footer>
 
 </body>
 </html>
